@@ -22,6 +22,7 @@ namespace basicCS
                 Console.WriteLine("  NO.2 - Session 3");
                 Console.WriteLine("  NO.4 - Session 4");
                 Console.WriteLine("  NO.5 - Session 5");
+                Console.WriteLine("  NO.6 - Session 6");
                 Console.WriteLine("  NO.0 - EXIT ");
                 Console.Write(" Yous option number : ");
                 userOptiont = Console.ReadLine();
@@ -110,6 +111,17 @@ namespace basicCS
 
                         break;
 
+                    case 6:
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("======================= \n SESSION 5 \n======================= ");
+
+                        session_6 objSS6 = new session_6();
+                        Console.WriteLine(objSS6.color);
+                        objSS6.car();
+
+
+                        break;
                 }
 
             }
