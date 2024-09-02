@@ -17,13 +17,15 @@ namespace basicCS
             {
                 //Console.Clear();
                 Console.WriteLine(" PLEASE CHOOSE FOLLWING OPTION");
-                Console.WriteLine("  NO.1 - Session 1");
-                Console.WriteLine("  NO.2 - Session 2");
-                Console.WriteLine("  NO.2 - Session 3");
-                Console.WriteLine("  NO.4 - Session 4");
-                Console.WriteLine("  NO.5 - Session 5");
-                Console.WriteLine("  NO.6 - Session 6");
-                Console.WriteLine("  NO.0 - EXIT ");
+                Console.WriteLine("  NO.1  - Session 1");
+                Console.WriteLine("  NO.2  - Session 2");
+                Console.WriteLine("  NO.2  - Session 3");
+                Console.WriteLine("  NO.4  - Session 4");
+                Console.WriteLine("  NO.5  - Session 5");
+                Console.WriteLine("  NO.6  - Session 6");
+                Console.WriteLine("  NO.6  - Session 7");
+                Console.WriteLine("  NO.72 - Session 7.2");
+                Console.WriteLine("  NO.0  - EXIT ");
                 Console.Write(" Yous option number : ");
                 userOptiont = Console.ReadLine();
                 isNumerical = int.TryParse(userOptiont, out optionNumber);
@@ -114,7 +116,7 @@ namespace basicCS
                     case 6:
                         Console.Clear();
                         Console.WriteLine();
-                        Console.WriteLine("======================= \n SESSION 5 \n======================= ");
+                        Console.WriteLine("======================= \n SESSION 6 \n======================= ");
 
                         session_6 objSS6 = new session_6();
                         Console.WriteLine(objSS6.color);
@@ -122,7 +124,36 @@ namespace basicCS
 
 
                         break;
+                    case 7:
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("======================= \n SESSION 7 \n======================= ");
+
+                        properties prop = new properties();
+                        prop.access_private_name();
+
+                        break;
+                    case 72:
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("======================= \n SESSION 7.2 \n======================= ");
+
+                        //properties_7_2 prop72 = new properties_7_2();
+                        //prop72.access_private_name();
+
+                        //Animal_kingdom animal_Kingdom = new Animal_kingdom();
+                        //animal_Kingdom.animal_kingdom();
+
+                        //Shape_Override shape = new Shape_Override();
+                        //shape.shape_override();
+
+                        Abstract abs = new Abstract();
+                        abs.absttract();
+
+                        break;
+
                 }
+
 
             }
             
